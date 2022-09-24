@@ -1,6 +1,6 @@
 # queen-elizabeth-II-portrait
 
-queen elizabeth animated portrait in vanilla css
+queen elizabeth animated portrait in vanill css
 
 ##  Technologies used
 
