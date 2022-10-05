@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Queen Elizabeth II Portrait in Vanilla CSS</title>
   <link rel="stylesheet" href="./style.css">
-
 </head>
+
 <body>
-<!-- partial:index.partial.html -->
+
+  <input type="checkbox" id="toggle-smile" name="toggle-smile" class="smile" hidden />
+  <!-- partial:index.partial.html -->
 <queen-liz id="queen">
+  <label for="toggle-smile"></label>
 
   <queen-head>
     <div class="hair"></div>
@@ -44,7 +47,5 @@
   </div>
 </details>
 <!-- partial -->
-  <script  src="./script.js"></script>
-
 </body>
 </html>
