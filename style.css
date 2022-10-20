@@ -33,6 +33,20 @@ ul li {
   padding: 0;
 }
 
+[hidden] {
+  display: none;
+}
+
+[for="toggle-smile"] {
+  position: absolute;
+  cursor: pointer;
+  z-index: 9;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
 queen-liz {
   position: relative;
   display: grid;
@@ -45,7 +59,6 @@ queen-liz {
   z-index: 2;
   box-shadow: 0 -15vmin 15vmin rgba(0,0,0,0.35) inset;
   overflow: hidden;
-  cursor: pointer;
 }
 
 queen-liz:hover {
@@ -227,7 +240,7 @@ queen-head {
   z-index: 3;
 }
 
-.smile queen-head {
+.smile:checked + queen-liz  queen-head {
   margin-bottom: -2vmin;
 }
 
@@ -258,7 +271,7 @@ queen-head::after {
     0 0 2vmin rgba(60, 0, 0, 0.2);
 }
 
-.smile queen-head::after {
+.smile:checked + queen-liz  queen-head::after {
   top: 15.5vmin;
 }
 
@@ -282,7 +295,7 @@ queen-head::after {
   box-shadow: 0 1vmin 1vmin rgba(70, 0, 0, 0.15);
 }
 
-.smile .face::after {
+.smile:checked + queen-liz .face::after {
   height: 7vmin;
   bottom: -1vmin;
 }
@@ -327,8 +340,8 @@ background: radial-gradient(circle, rgba(253,252,244,1) 20%, rgba(237,230,214,1)
   left: 101%;
 }
 
-.smile .earrings::before,
-.smile .earrings::after {
+.smile:checked + queen-liz .earrings::before,
+.smile:checked + queen-liz .earrings::after {
   margin-top: 1vmin;
 }
 
@@ -353,7 +366,7 @@ background: radial-gradient(circle, rgba(253,252,244,1) 20%, rgba(237,230,214,1)
   right: 18%;
 }
 
-.smile .eye {
+.smile:checked + queen-liz .eye {
   top: 39%;
 }
 
@@ -375,7 +388,7 @@ queen-liz:hover .eye::before {
   transform: translate(0, 0);
 }
 
-.smile .eye::before {
+.smile:checked + queen-liz .eye::before {
   transform: translate(-1vmin, -1.25vmin);
 }
 
@@ -391,7 +404,7 @@ queen-liz:hover .eye::before {
   border-radius: 100%;
 }
 
-.smile .eye::after {
+.smile:checked + queen-liz .eye::after {
   bottom: 25%;
   left: -45%;
   width: 150%;
@@ -412,7 +425,7 @@ queen-liz:hover .eye::before {
   background: transparent;
 }
 
-.smile .eye i {
+.smile:checked + queen-liz .eye i {
   top: -1.5vmin;
   left: 1vmin;
 }
@@ -431,7 +444,7 @@ queen-liz:hover .eye::before {
   box-shadow: 0 1.3vmin 0 rgba(50,0,0,0.1) inset;
 }
 
-.smile .mouth {
+.smile:checked + queen-liz .mouth {
   bottom: 13%;
   width: 46%;
   left: 27%;
@@ -456,8 +469,8 @@ queen-liz:hover .eye::before {
   border-radius: 40% 100% 30% 0;
 }
 
-.smile .mouth::after,
-.smile .mouth::before {
+.smile:checked + queen-liz .mouth::after,
+.smile:checked + queen-liz .mouth::before {
   height: 1.25vmin;
 }
 
@@ -494,12 +507,12 @@ queen-liz:hover .eye::before {
   transform: rotate(135deg);
 }
 
-.smile .nose::before {
+.smile:checked + queen-liz .nose::before {
   transform: rotate(60deg);
   height: 7vmin;
 }
 
-.smile .nose::after {
+.smile:checked + queen-liz .nose::after {
   transform: rotate(120deg);
   height: 7vmin;
 }

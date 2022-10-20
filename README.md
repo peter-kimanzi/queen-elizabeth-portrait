@@ -1,11 +1,11 @@
-# queen-elizabeth-II-portrait
-queen elizabeth animated portrait in  css
+# Queen Elizabeth II portrait
+
+Queen Elizabeth animated portrait in vanilla CSS
 
 ##  Technologies used
 
 * HTML
 * CSS
-* JavaScript
 
 ## Live link
 
