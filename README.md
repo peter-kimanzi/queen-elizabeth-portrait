@@ -2,7 +2,7 @@
 
 queen elizabeth animated portrait in  css
 
-##  Technologies used.
+##  Technologies used
 
 * HTML
 * CSS
